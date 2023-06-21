@@ -1,0 +1,44 @@
+.module-foldout-root {
+    background-color: var(--unity-colors-inspector_titlebar-background);
+    border-bottom-width: 1px;
+    border-bottom-color: var(--unity-colors-default-border);
+}
+
+.module-foldout {
+}
+
+.module-foldout .unity-foldout__toggle {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 32px;
+}
+
+.foldout-header-height {
+    height: 32px;
+}
+
+.module-foldout .unity-foldout__toggle .unity-toggle__input {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.module-foldout .unity-foldout__content {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.module-foldout .unity-base-field__inspector-field {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.module-foldout .unity-inspector-element .unity-foldout__toggle {
+    margin-left: 0;
+    margin-right: 0;
+}

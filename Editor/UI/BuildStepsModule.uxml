@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.endava.buildanddeploy/Editor/UI/Styles/buildStepModule.uss?fileID=7433441132597879392&amp;guid=7dbe92db374e741459660fc08af22ccf&amp;type=3#buildStepModule" />
+    <ui:VisualElement class="buildStep-list-entry__background" style="padding-left: 8px; padding-right: 8px; padding-top: 8px; padding-bottom: 8px;">
+        <ui:ListView focusable="true" name="buildStepList" virtualization-method="DynamicHeight" show-bound-collection-size="false" reorderable="true" />
+    </ui:VisualElement>
+    <ui:VisualElement name="ctr_custom-footer" class="unity-list-view__footer">
+        <ui:Button text="-" display-tooltip-when-elided="true" name="remove-button" />
+        <ui:Button text="+" display-tooltip-when-elided="true" name="add-button" />
+    </ui:VisualElement>
+</ui:UXML>

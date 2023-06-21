@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.endava.buildanddeploy/Editor/UI/Styles/commonBuildAndDeployStyles.uss?fileID=7433441132597879392&amp;guid=cff83a206c6ec6f4c8ebf9fc5b6b00c0&amp;type=3#commonBuildAndDeployStyles" />
+    <Style src="project://database/Packages/com.endava.buildanddeploy/Editor/UI/Styles/scenesModule.uss?fileID=7433441132597879392&amp;guid=b8a92a228face444a856035e29a5941e&amp;type=3#scenesModule" />
+    <ui:VisualElement name="sceneList-root">
+        <ui:VisualElement class="list-headline" style="flex-direction: row; justify-content: space-between;">
+            <ui:Label text="Included Scenes" display-tooltip-when-elided="true" name="headline" picking-mode="Ignore" style="margin-left: 7px; margin-top: 3px; margin-bottom: 3px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-right: 7px;" />
+            <ui:Button display-tooltip-when-elided="true" name="optionsBtn" style="margin-right: 0; margin-top: 0; margin-bottom: 0; margin-left: 0; border-bottom-width: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; flex-direction: row; align-items: center; justify-content: space-between; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-top-left-radius: 0;">
+                <ui:Label text="Options" display-tooltip-when-elided="true" name="optionsBtnLabel" />
+                <ui:VisualElement picking-mode="Ignore" class="arrow-down-icon" style="width: 12px; height: 12px;" />
+            </ui:Button>
+        </ui:VisualElement>
+        <ui:ListView focusable="true" reorderable="true" show-add-remove-footer="true" name="scenesList" header-title="Scenes" show-foldout-header="false" virtualization-method="DynamicHeight" show-bound-collection-size="false" selection-type="Multiple" />
+    </ui:VisualElement>
+</ui:UXML>

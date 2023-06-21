@@ -1,0 +1,4 @@
+.settings-property-field {
+    margin-left: 12px;
+    padding-bottom: 3px;
+}

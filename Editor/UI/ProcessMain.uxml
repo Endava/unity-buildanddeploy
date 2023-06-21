@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.endava.buildanddeploy/Editor/UI/Styles/commonBuildAndDeployStyles.uss?fileID=7433441132597879392&amp;guid=cff83a206c6ec6f4c8ebf9fc5b6b00c0&amp;type=3#commonBuildAndDeployStyles" />
+    <Style src="project://database/Packages/com.endava.buildanddeploy/Editor/UI/Styles/processMain.uss?fileID=7433441132597879392&amp;guid=8fe79eca5bf15b04594657a2a8cf3374&amp;type=3#processMain" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement class="bottom-separator-line" style="justify-content: center; align-items: center; flex-direction: row; padding-left: 8px; padding-right: 8px; padding-top: 8px; padding-bottom: 8px;">
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="headline" style="-unity-font-style: bold; font-size: 24px;" />
+            <ui:VisualElement picking-mode="Ignore" style="position: absolute; width: 100%; height: 100%; flex-direction: row-reverse; align-items: center; padding-left: 2px; padding-right: 2px; padding-top: 2px; padding-bottom: 2px;">
+                <ui:VisualElement name="icon" class="validation-icon error-icon" style="position: absolute;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="bottom-separator-line module-default-inspector-background" style="padding-top: 8px; padding-bottom: 8px; padding-left: 8px; padding-right: 8px;">
+            <ui:VisualElement style="flex-direction: row; justify-content: space-around; margin-bottom: 7px; height: 30px;">
+                <ui:Button text="Build" display-tooltip-when-elided="true" name="buildBtn" style="min-width: 100px; flex-grow: 1;" />
+                <ui:Button text="Build &amp; Run" display-tooltip-when-elided="true" name="buildAndRunBtn" style="min-width: 100px; flex-grow: 1;" />
+                <ui:Button display-tooltip-when-elided="true" name="cmdlineBtn" class="darker-button" style="justify-content: center; align-items: center;">
+                    <ui:VisualElement picking-mode="Ignore" style="background-image: resource(&apos;commandline&apos;); width: 14px; height: 14px; -unity-background-scale-mode: scale-to-fit;" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement>
+                <ui:HelpBox name="validationInfo" message-type="Info" text="Some message for validation state here!" style="padding-left: 4px; padding-right: 4px; padding-top: 4px; padding-bottom: 4px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ctr-modules" class="bottom-separator-line" style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

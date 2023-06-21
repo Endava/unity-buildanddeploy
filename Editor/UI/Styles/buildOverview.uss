@@ -1,0 +1,24 @@
+.open-dashboard-icon {
+    background-image: resource('uibuilderpackageresources/icons/dark/codepreview/gotodashboard.png');
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.open-dashboard-icon:hover {
+    background-image: resource('uibuilderpackageresources/icons/selected/codepreview/gotodashboard.png');
+}
+
+.buildOverview-item {
+    background-color: var(--unity-colors-inspector_titlebar-background);
+    border-left-color: var(--unity-colors-app_toolbar_button-border);
+    border-right-color: var(--unity-colors-app_toolbar_button-border);
+    border-top-color: var(--unity-colors-app_toolbar_button-border);
+    border-bottom-color: var(--unity-colors-app_toolbar_button-border);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}

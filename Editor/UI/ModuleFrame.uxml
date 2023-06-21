@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.endava.buildanddeploy/Editor/UI/Styles/commonBuildAndDeployStyles.uss?fileID=7433441132597879392&amp;guid=cff83a206c6ec6f4c8ebf9fc5b6b00c0&amp;type=3#commonBuildAndDeployStyles" />
+    <Style src="project://database/Packages/com.endava.buildanddeploy/Editor/UI/Styles/moduleFrame.uss?fileID=7433441132597879392&amp;guid=212bd754f79ce984eb8e05848e57e1f3&amp;type=3#moduleFrame" />
+    <ui:VisualElement name="ctr_root" class="module-foldout-root">
+        <ui:Foldout name="foldout_module" value="false" class="module-foldout" style="flex-grow: 1;">
+            <ui:VisualElement name="moduleContent" style="flex-grow: 1; flex-shrink: 0; min-height: 50px;" />
+        </ui:Foldout>
+        <ui:VisualElement picking-mode="Ignore" name="ctr_overlayItems" class="foldout-header-height" style="position: absolute; width: 100%; flex-direction: row; align-items: center;">
+            <ui:VisualElement picking-mode="Ignore" name="spacing" style="width: 17px;" />
+            <ui:Toggle name="enabled" style="margin-bottom: 1px; margin-left: 3px; margin-right: 3px; margin-top: 1px;" />
+            <ui:VisualElement name="moduleIcon" style="width: 16px; height: 16px; -unity-background-scale-mode: scale-to-fit; margin-left: 3px; margin-right: 3px; margin-top: 1px; margin-bottom: 1px; display: none; flex-shrink: 0;" />
+            <ui:Label text="Build Settings" display-tooltip-when-elided="true" picking-mode="Ignore" name="headlineLabel" class="validation-icon" style="font-size: 14px; flex-grow: 1; -unity-text-align: middle-left;" />
+            <ui:VisualElement name="validationIcon" class="validation-icon error-icon" />
+            <ui:VisualElement name="helpIcon" class="help-icon" />
+            <ui:VisualElement name="spacing" style="width: 7px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
