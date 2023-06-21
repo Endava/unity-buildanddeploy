@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e936924c9a38db488f63c4070a514ba, type: 3}
+  m_Name: WindowsBuild
+  m_EditorClassIdentifier: 
+  modules:
+  - rid: 5309776070190039083
+  - rid: 5309776070190039084
+  - rid: 5309776070190039085
+  - rid: 5309776070190039086
+  - rid: 5309776070190039087
+  - rid: 5309776070190039088
+  references:
+    version: 2
+    RefIds:
+    - rid: 551408615909752908
+      type: {class: AddCompilerFlag, ns: Endava.BuildAndDeploy.BuildSteps, asm: com.endava.buildanddeploy.Editor}
+      data:
+        customStepName: AddCompilerFlag
+        isEnabled: 1
+        Process: {fileID: 11400000}
+        CompilerFlags: RED_PARTICLES
+    - rid: 551408615909752910
+      type: {class: ClearCompilerFlags, ns: Endava.BuildAndDeploy.BuildSteps, asm: com.endava.buildanddeploy.Editor}
+      data:
+        customStepName: ClearCompilerFlags
+        isEnabled: 1
+        Process: {fileID: 11400000}
+    - rid: 5309776070190039083
+      type: {class: MainModule, ns: Endava.BuildAndDeploy, asm: com.endava.buildanddeploy.Editor}
+      data:
+        isEnabled: 1
+        isFolded: 0
+        process: {fileID: 11400000}
+        target: 19
+        cleanBuild: 1
+        path: Builds/Windows64
+        fileName: TestProject
+        showDeploymentPathWarnings: 1
+        logLevel: 1
+        logTargets: -1
+    - rid: 5309776070190039084
+      type: {class: SettingsModule, ns: Endava.BuildAndDeploy, asm: com.endava.buildanddeploy.Editor}
+      data:
+        isEnabled: 1
+        isFolded: 0
+        process: {fileID: 11400000}
+        buildOption:
+        - rid: 5309776070190039090
+    - rid: 5309776070190039085
+      type: {class: ScenesModule, ns: Endava.BuildAndDeploy, asm: com.endava.buildanddeploy.Editor}
+      data:
+        isEnabled: 1
+        isFolded: 0
+        process: {fileID: 11400000}
+        sceneAssets:
+        - {fileID: 102900000, guid: f558bc06758289c4aa7dcd94e567b818, type: 3}
+        - {fileID: 102900000, guid: 0c01aeb6ddad68e45b6a14bfccc80be4, type: 3}
+    - rid: 5309776070190039086
+      type: {class: PreBuildStepsModule, ns: Endava.BuildAndDeploy, asm: com.endava.buildanddeploy.Editor}
+      data:
+        isEnabled: 0
+        isFolded: 0
+        process: {fileID: 11400000}
+        buildSteps:
+        - rid: 551408615909752908
+    - rid: 5309776070190039087
+      type: {class: UnityBuildModule, ns: Endava.BuildAndDeploy, asm: com.endava.buildanddeploy.Editor}
+      data:
+        isEnabled: 1
+        isFolded: 1
+        process: {fileID: 11400000}
+    - rid: 5309776070190039088
+      type: {class: PostBuildStepsModule, ns: Endava.BuildAndDeploy, asm: com.endava.buildanddeploy.Editor}
+      data:
+        isEnabled: 0
+        isFolded: 0
+        process: {fileID: 11400000}
+        buildSteps:
+        - rid: 551408615909752910
+    - rid: 5309776070190039090
+      type: {class: BuildOptionsStandalone, ns: Endava.BuildAndDeploy, asm: com.endava.buildanddeploy.Editor}
+      data:
+        development: 1
+        allowDebugging: 1
+        connectProfiler: 0
+        buildWithDeepProfilingSupport: 0
+        compression: 0
+        copyPDBFiles: 0
+        createSolution: 0

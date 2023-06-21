@@ -1,0 +1,63 @@
+.buildStep-list-entry__background {
+    background-color: var(--unity-colors-inspector_titlebar-background);
+    border-left-color: var(--unity-colors-app_toolbar_button-border);
+    border-right-color: var(--unity-colors-app_toolbar_button-border);
+    border-top-color: var(--unity-colors-app_toolbar_button-border);
+    border-bottom-color: var(--unity-colors-app_toolbar_button-border);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.open-dashboard-icon {
+    background-image: resource('uibuilderpackageresources/icons/dark/codepreview/gotodashboard.png');
+    -unity-background-scale-mode: scale-to-fit;
+    width: 14px;
+    height: 13px;
+}
+
+.open-dashboard-icon:hover {
+    background-image: resource('uibuilderpackageresources/icons/selected/codepreview/gotodashboard.png');
+}
+
+#buildStepList .unity-list-view__scroll-view--with-footer {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#buildStepList .unity-list-view__empty-label {
+    -unity-text-align: middle-center;
+    flex-grow: 1;
+}
+
+#buildStepList .unity-scroll-view__content-viewport {
+    min-height: 120px;
+}
+
+.buildstep-foldout-content-background {
+    background-color: var(--unity-colors-button-border);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left-color: var(--unity-colors-app_toolbar_button-border);
+    border-right-color: var(--unity-colors-app_toolbar_button-border);
+    border-top-color: var(--unity-colors-app_toolbar_button-border);
+    border-bottom-color: var(--unity-colors-app_toolbar_button-border);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.buildStep-list-entry-content-headline-background {
+    background-color: var(--unity-colors-default-background);
+}

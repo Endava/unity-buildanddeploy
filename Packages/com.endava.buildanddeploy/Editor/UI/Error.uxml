@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.endava.buildanddeploy/Editor/UI/Styles/commonBuildAndDeployStyles.uss?fileID=7433441132597879392&amp;guid=cff83a206c6ec6f4c8ebf9fc5b6b00c0&amp;type=3#commonBuildAndDeployStyles" />
+    <ui:VisualElement>
+        <ui:HelpBox text="Label" name="errorLabel" message-type="Error" style="font-size: 16px;" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,27 @@
+.module-default-inspector-background {
+    background-color: var(--unity-colors-inspector_titlebar-background);
+}
+
+.darker-button {
+    background-color: var(--unity-colors-app_toolbar_button-background);
+    border-left-color: var(--unity-colors-app_toolbar_button-border);
+    border-right-color: var(--unity-colors-app_toolbar_button-border);
+    border-top-color: var(--unity-colors-app_toolbar_button-border);
+    border-bottom-color: var(--unity-colors-app_toolbar_button-border);
+}
+
+.darker-button:checked {
+    background-color: var(--unity-colors-app_toolbar_button-background-checked);
+}
+
+.darker-button:hover {
+    background-color: var(--unity-colors-app_toolbar_button-background-hover);
+}
+
+#validationInfo .unity-help-box__label {
+    font-size: 12px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

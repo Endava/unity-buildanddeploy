@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.endava.buildanddeploy/Editor/UI/Styles/buildOverview.uss?fileID=7433441132597879392&amp;guid=b4a4848ddf53f6e4a890b17e293b17b1&amp;type=3#buildOverview" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement style="align-items: center; margin-bottom: 20px; margin-top: 12px;">
+            <ui:Label text="Build Processes" display-tooltip-when-elided="true" name="headlineLabel" style="font-size: 18px; margin-left: 2px; margin-right: 2px; margin-top: 2px; margin-bottom: 4px; -unity-text-align: middle-center; -unity-font-style: bold;" />
+            <ui:Label text="Listing of all the build processes existing in your project" display-tooltip-when-elided="true" name="subtitleLabel" style="white-space: normal; -unity-text-align: middle-center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ctr-buildprocesses">
+            <uie:Toolbar style="justify-content: flex-end;">
+                <uie:ToolbarSearchField focusable="true" name="searchfield" style="flex-shrink: 1; width: auto; max-width: 300px;" />
+                <uie:ToolbarButton display-tooltip-when-elided="false" name="refreshBtn" style="width: 28px; border-right-width: 0; margin-left: 4px; align-items: center; justify-content: center;">
+                    <ui:VisualElement name="refreshBtnIcon" picking-mode="Ignore" style="width: 12px; height: 12px;" />
+                </uie:ToolbarButton>
+            </uie:Toolbar>
+            <ui:ListView focusable="false" show-bound-collection-size="false" show-alternating-row-backgrounds="None" selection-type="None" virtualization-method="DynamicHeight" name="processList" style="min-height: 50px; margin-top: 4px;" />
+            <ui:VisualElement name="ctr-empty" style="min-height: 50px;">
+                <ui:Label text="No Build Processes found in project" display-tooltip-when-elided="true" name="emptyLabel" style="-unity-text-align: middle-center; flex-grow: 1; font-size: 10px; -unity-font-style: italic;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="align-items: center;">
+        <ui:HelpBox message-type="Info" name="hintBox" text="Starts the Unity Build" style="padding-left: 11px; padding-right: 11px; padding-top: 11px; padding-bottom: 11px; -unity-font-style: normal;" />
+    </ui:VisualElement>
+</ui:UXML>

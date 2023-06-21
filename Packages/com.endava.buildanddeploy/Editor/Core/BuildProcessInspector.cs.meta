@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 807f0b35234e1ca48bf7989cae0c925b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_uiList: {fileID: 11400000, guid: 45f5a6afcf4e03546809a60123927531, type: 2}
+  - m_headlineUi: {fileID: 9197481963319205126, guid: 14810a68b472da445ab6ecdacd5fe869,
+      type: 3}
+  - m_commandPanelUi: {fileID: 9197481963319205126, guid: 1f9448b8bcb669947a984b375b576b61,
+      type: 3}
+  - m_moduleFrameUi: {fileID: 9197481963319205126, guid: 93cdd151a1ab9d8428f39495ec398be2,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

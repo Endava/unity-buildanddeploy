@@ -1,0 +1,80 @@
+* {
+    --no-color: transparent;
+}
+
+.hidden {
+    display: none;
+}
+
+.help-icon {
+    background-image: resource('helpIcon_x2');
+    width: 14px;
+    height: 14px; 
+    -unity-background-scale-mode: scale-to-fit;
+    flex-shrink: 0;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.arrow-down-icon {
+    background-image: var(--unity-icons-dropdown);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.bottom-separator-line {
+    border-bottom-width: 1px;
+    border-bottom-color: var(--unity-colors-default-border);
+}
+
+.reorderable-icon {
+    -unity-text-align: middle-left;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    color: var(--unity-colors-scrollbar_thumb-border-hover);
+}
+
+.validation-icon {
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.disabled-label {
+    color: var(--unity-colors-toolbar_button-text);
+}
+
+.unity-foldout-folded {
+    background-image: var(--unity-icons-foldout);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.unity-foldout-unfolded {
+    background-image: var(--unity-icons-foldout-checked);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.warning-icon {
+    background-image: resource('warning_yellow_dot_x2');
+}
+
+.error-icon {
+    background-image: resource('error_red_dot_x2');
+}
+
+.valid-icon {
+    background-image: resource('successfull_green_dot_x2');
+}
+
+.module-foldout .unity-list-view__footer {
+    padding-left: 0px;
+    padding-right: 0px;
+}

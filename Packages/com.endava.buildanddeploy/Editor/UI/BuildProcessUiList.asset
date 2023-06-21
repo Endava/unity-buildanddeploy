@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b42a1d456fd378043bbac7825c715740, type: 3}
+  m_Name: BuildProcessUiList
+  m_EditorClassIdentifier: 
+  m_processMainUi: {fileID: 9197481963319205126, guid: 034c8242544119a44ae2e671ef28173a,
+    type: 3}
+  m_moduleFrameUi: {fileID: 9197481963319205126, guid: 93cdd151a1ab9d8428f39495ec398be2,
+    type: 3}
+  m_mainModuleContentUi: {fileID: 9197481963319205126, guid: 1aa8d2df28a03674b9a8d2cf68ed8851,
+    type: 3}
+  m_errorContentUi: {fileID: 9197481963319205126, guid: 36e021e10eb91184ca31c018ce5240ee,
+    type: 3}
+  m_settingsModule: {fileID: 9197481963319205126, guid: d3131aa451c17b14dbca8614004f826c,
+    type: 3}
+  m_scenesModule: {fileID: 9197481963319205126, guid: 27d730204b9454d45a5c6b48bca6f608,
+    type: 3}
+  m_scenesModuleListEntryUi: {fileID: 9197481963319205126, guid: 98fdb22065a31ad4c89573cbeb476cac,
+    type: 3}
+  m_buildStepsModule: {fileID: 9197481963319205126, guid: ca960e1adba6d0440be0a1ab861b168d,
+    type: 3}
+  m_buildStepFrame: {fileID: 9197481963319205126, guid: be3558d1b4162e8488e85119bfa707e4,
+    type: 3}
+  m_unityBuildModule: {fileID: 9197481963319205126, guid: b1997fb0239dc1a4e80197de5d21e0ec,
+    type: 3}
+  m_buildOverviewUi: {fileID: 9197481963319205126, guid: e30b38df1f870e74d865f6cb0d7be55e,
+    type: 3}
+  m_buildOverviewProcessEntryUi: {fileID: 9197481963319205126, guid: e0a11d03a6b281d4682c654870da35ad,
+    type: 3}
+  m_commonStyles: {fileID: 7433441132597879392, guid: cff83a206c6ec6f4c8ebf9fc5b6b00c0,
+    type: 3}

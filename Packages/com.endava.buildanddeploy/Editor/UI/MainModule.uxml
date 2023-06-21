@@ -1,0 +1,53 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.endava.buildanddeploy/Editor/UI/Styles/commonBuildAndDeployStyles.uss?fileID=7433441132597879392&amp;guid=cff83a206c6ec6f4c8ebf9fc5b6b00c0&amp;type=3#commonBuildAndDeployStyles" />
+    <ui:VisualElement style="flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 3px; margin-left: 12px;">
+        <ui:Label text="Preferences" display-tooltip-when-elided="true" name="preferencesLabel" style="-unity-font-style: bold;" />
+        <ui:VisualElement name="preferencesHelpIcon" class="help-icon" />
+    </ui:VisualElement>
+    <ui:VisualElement style="margin-left: 28px;">
+        <uie:EnumField label="Target Platform" value="NoTarget" type="UnityEditor.BuildTarget, UnityEditor" name="buildTargetField" style="margin-bottom: 3px;" />
+        <ui:VisualElement style="flex-direction: row; justify-content: space-between; margin-bottom: 1px; margin-top: 0;">
+            <ui:Toggle label="Clean Build" name="cleanBuildToggle" />
+            <ui:VisualElement style="width: 32px; align-items: center; justify-content: center;">
+                <ui:VisualElement name="cleanBuildHelpIcon" class="help-icon" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-direction: row; justify-content: space-between; margin-bottom: 3px;">
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:TextField picking-mode="Ignore" label="Output Path" value="filler text" text="filler text" name="outputPathField" readonly="true" style="flex-grow: 1; margin-top: 1px; margin-bottom: 1px; margin-right: 3px;" />
+                <ui:VisualElement style="width: 100%; height: 100%; position: absolute; align-items: flex-end; padding-right: 2px; padding-left: 2px; padding-top: 2px; padding-bottom: 2px;">
+                    <ui:VisualElement style="justify-content: center; align-items: flex-end; flex-grow: 1; background-color: rgba(60, 60, 60, 255); margin-right: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px;">
+                        <ui:Toggle name="showWarningsToggle" style="margin-left: 2px; margin-right: 2px; margin-bottom: 1px; margin-top: 2px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button text="..." display-tooltip-when-elided="true" name="chooseDirectoryBtn" style="margin-left: 0; margin-right: 0; width: 32px; margin-top: 1px; margin-bottom: 1px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-direction: row; margin-bottom: 3px;">
+            <ui:TextField picking-mode="Ignore" label="Output Data" value="filler text" text="filler text" name="exportNameField" readonly="false" style="flex-grow: 1; margin-top: 1px; margin-bottom: 1px; margin-right: 3px;" />
+            <ui:TextField picking-mode="Ignore" text="exe" readonly="true" name="filenameExtensionField" focusable="false" style="white-space: nowrap; -unity-text-align: middle-center; width: 32px; margin-left: 0; margin-right: 0; margin-top: 1px; margin-bottom: 1px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-direction: row; justify-content: flex-start;">
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:TextField picking-mode="Ignore" label="Full Output Path" value="filler text" text="filler text" name="fullPathField" readonly="true" style="flex-grow: 1; margin-top: 1px; margin-bottom: 1px; margin-right: 3px;" />
+                <ui:VisualElement style="width: 100%; height: 100%; position: absolute; align-items: flex-end; padding-right: 2px; padding-left: 2px; padding-top: 2px; padding-bottom: 2px;">
+                    <uie:ToolbarButton display-tooltip-when-elided="true" name="pathCopyBtn" style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; align-items: center; justify-content: center; width: 18px; height: 16px; left: auto; border-top-right-radius: 2px; border-bottom-right-radius: 2px; padding-left: 1px; padding-right: 1px; padding-top: 1px; padding-bottom: 1px; margin-right: 2px;">
+                        <ui:VisualElement picking-mode="Ignore" name="pathCopyIcon" style="width: 12px; height: 12px;" />
+                    </uie:ToolbarButton>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="width: 32px; align-items: center; justify-content: center;">
+                <ui:VisualElement name="fullPathHelpIcon" class="help-icon" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-direction: row; justify-content: space-between; margin-top: 8px; align-items: center; margin-left: 12px;">
+        <ui:Label text="Logging" display-tooltip-when-elided="true" name="loggingLabel" style="-unity-font-style: bold;" />
+        <ui:VisualElement name="loggingHelpIcon" class="help-icon" />
+    </ui:VisualElement>
+    <ui:VisualElement style="margin-left: 28px;">
+        <uie:EnumField label="Log Level" type="UnityEditor.BuildTarget, UnityEditor" name="logLevelField" style="margin-bottom: 3px;" />
+        <uie:EnumFlagsField label="Log Targets" type="UnityEditor.BuildTarget, UnityEditor" name="logTargetsField" style="margin-bottom: 8px;" />
+        <ui:HelpBox text="Label" name="logFileHint" message-type="Info" style="margin-left: 0; margin-right: 3px;" />
+    </ui:VisualElement>
+</ui:UXML>

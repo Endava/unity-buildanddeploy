@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e936924c9a38db488f63c4070a514ba, type: 3}
+  m_Name: SimpleBuild
+  m_EditorClassIdentifier: 
+  modules:
+  - rid: 5309775994746306562
+  - rid: 5309775994746306563
+  - rid: 5309775994746306564
+  - rid: 5309775994746306565
+  - rid: 5309775994746306566
+  - rid: 5309775994746306567
+  references:
+    version: 2
+    RefIds:
+    - rid: 5309775994746306562
+      type: {class: MainModule, ns: Endava.BuildAndDeploy, asm: com.endava.buildanddeploy.Editor}
+      data:
+        isEnabled: 1
+        isFolded: 1
+        process: {fileID: 11400000}
+        target: 5
+        cleanBuild: 1
+        path: Builds/
+        fileName: Test
+        showDeploymentPathWarnings: 1
+        logLevel: 1
+        logTargets: -1
+    - rid: 5309775994746306563
+      type: {class: SettingsModule, ns: Endava.BuildAndDeploy, asm: com.endava.buildanddeploy.Editor}
+      data:
+        isEnabled: 1
+        isFolded: 0
+        process: {fileID: 11400000}
+        buildOption:
+        - rid: 5309775994746306569
+    - rid: 5309775994746306564
+      type: {class: ScenesModule, ns: Endava.BuildAndDeploy, asm: com.endava.buildanddeploy.Editor}
+      data:
+        isEnabled: 1
+        isFolded: 0
+        process: {fileID: 11400000}
+        sceneAssets:
+        - {fileID: 102900000, guid: 031e2632e9386eb4799a301d8ebba603, type: 3}
+    - rid: 5309775994746306565
+      type: {class: PreBuildStepsModule, ns: Endava.BuildAndDeploy, asm: com.endava.buildanddeploy.Editor}
+      data:
+        isEnabled: 1
+        isFolded: 1
+        process: {fileID: 11400000}
+        buildSteps:
+        - rid: 5309775994746306570
+    - rid: 5309775994746306566
+      type: {class: UnityBuildModule, ns: Endava.BuildAndDeploy, asm: com.endava.buildanddeploy.Editor}
+      data:
+        isEnabled: 1
+        isFolded: 0
+        process: {fileID: 11400000}
+    - rid: 5309775994746306567
+      type: {class: PostBuildStepsModule, ns: Endava.BuildAndDeploy, asm: com.endava.buildanddeploy.Editor}
+      data:
+        isEnabled: 0
+        isFolded: 0
+        process: {fileID: 11400000}
+        buildSteps: []
+    - rid: 5309775994746306569
+      type: {class: BuildOptionsStandalone, ns: Endava.BuildAndDeploy, asm: com.endava.buildanddeploy.Editor}
+      data:
+        development: 1
+        allowDebugging: 0
+        connectProfiler: 0
+        buildWithDeepProfilingSupport: 0
+        compression: 0
+        copyPDBFiles: 0
+        createSolution: 0
+    - rid: 5309775994746306570
+      type: {class: AddCompilerFlag, ns: Endava.BuildAndDeploy.BuildSteps, asm: com.endava.buildanddeploy.Editor}
+      data:
+        customStepName: AddCompilerFlag
+        isEnabled: 1
+        Process: {fileID: 11400000}
+        CompilerFlags: CUSTOM_BUILD

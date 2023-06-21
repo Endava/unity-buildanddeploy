@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.endava.buildanddeploy/Editor/UI/Styles/commonBuildAndDeployStyles.uss?fileID=7433441132597879392&amp;guid=cff83a206c6ec6f4c8ebf9fc5b6b00c0&amp;type=3#commonBuildAndDeployStyles" />
+    <Style src="project://database/Packages/com.endava.buildanddeploy/Editor/UI/Styles/buildOverview.uss?fileID=7433441132597879392&amp;guid=b4a4848ddf53f6e4a890b17e293b17b1&amp;type=3#buildOverview" />
+    <ui:VisualElement style="padding-top: 4px; padding-left: 4px; padding-right: 4px; padding-bottom: 4px;">
+        <ui:VisualElement class="buildOverview-item" style="flex-direction: row; padding-top: 8px; padding-left: 4px; padding-right: 4px; padding-bottom: 8px;">
+            <ui:VisualElement name="icon" style="-unity-background-scale-mode: scale-to-fit; width: 20px; margin-left: 12px;" />
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="name" style="flex-grow: 1; -unity-text-align: middle-left; margin-left: 12px; margin-right: 12px; -unity-font-style: bold;" />
+            <ui:Button text="Build" display-tooltip-when-elided="true" name="BuildBtn" />
+            <ui:VisualElement style="align-items: center; justify-content: center; margin-left: 12px; margin-right: 12px;">
+                <ui:VisualElement name="stateIcon" class="valid-icon validation-icon" style="-unity-background-scale-mode: scale-to-fit;" />
+            </ui:VisualElement>
+            <ui:Button display-tooltip-when-elided="true" name="GoToBtn" style="background-color: rgba(89, 88, 88, 0); width: 16px; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; align-items: center; justify-content: center;">
+                <ui:VisualElement class="open-dashboard-icon" style="width: 16px; height: 16px;" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

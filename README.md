@@ -1,2 +1,9 @@
-# unity-buildanddeploy
-This package is used to provide a Unity Package, which is able to build and deploy various builds from a customizable/fresh looking tool. Similar to the deprecated UBS, this can be used to streamline your build and deployment process of your projects
+Build and Deploy
+======================
+
+This is the "main development project", which allows you to contribute and test the Unity package.
+
+**This "main repository" will not work within the Unity Package manager and you need to follow the guidance below to include the "correct" package.**
+
+See the package readme for further details
+[Package Readme](./Packages/com.endava.buildanddeploy/README.md)

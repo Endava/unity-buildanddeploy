@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67cf9009cc6ea4a4f8a926bde54172ba, type: 3}
+  m_Name: UxmlBindingSettings
+  m_EditorClassIdentifier: 
+  m_scriptTemplatePath: {fileID: 4900000, guid: 13ebbcfce9ea6774c9ac21e807689caa,
+    type: 3}
+  m_bindingGeneratorType: 0
+  m_outputDirectory: ../Packages/com.endava.buildanddeploy/Editor/Bindings
+  m_rootNamespace: Endava.BuildAndDeploy.UxmlBindings
+  m_classNameFormat: '{0}Binding'
+  m_generateBindingAutomaticallyOnImport: 0
+  m_logVerbose: 0
+  m_ignoredFolders: []

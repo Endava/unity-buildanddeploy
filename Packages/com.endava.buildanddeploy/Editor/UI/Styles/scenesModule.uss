@@ -1,0 +1,52 @@
+.list-headline {
+    background-color: var(--unity-colors-default-background);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-left-color: var(--unity-colors-inspector_titlebar-border);
+    border-right-color: var(--unity-colors-inspector_titlebar-border);
+    border-top-color: var(--unity-colors-inspector_titlebar-border);
+    border-bottom-color: var(--unity-colors-default-border);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+#scenesList .unity-list-view__scroll-view--with-footer {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#scenesList .unity-list-view__empty-label {
+    -unity-text-align: middle-center;
+    flex-grow: 1;
+}
+
+#scenesList .unity-scroll-view__content-viewport {
+    min-height: 72px;
+}
+
+#scenesList .unity-scroll-view__content-container {
+    min-height: 72px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.scenesModule-list-entry__background {
+    background-color: var(--unity-colors-alternated_rows-background);
+    border-left-color: var(--unity-colors-app_toolbar_button-border);
+    border-right-color: var(--unity-colors-app_toolbar_button-border);
+    border-top-color: var(--unity-colors-app_toolbar_button-border);
+    border-bottom-color: var(--unity-colors-app_toolbar_button-border);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
