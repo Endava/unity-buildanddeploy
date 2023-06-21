@@ -7,11 +7,11 @@
       "dependencies": {}
     },
     "com.endava.uxmlbindinggenerator": {
-      "version": "https://upm-access:eSAr5_wtaBJxbifLy-Wg@git.exozet.com/unitylibs/uitoolkitbindinggenerator.git#1.0.0",
+      "version": "https://github.com/Endava/unity-uitoolkit-bindinggenerator.git#1.0.0",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "66967f58f720af60a89863746211ba891d70d349"
+      "hash": "bb42a3c763433d535bbec5c7fa48443da952d220"
     },
     "com.unity.ext.nunit": {
       "version": "1.0.6",
